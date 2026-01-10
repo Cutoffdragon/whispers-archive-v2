@@ -3,7 +3,7 @@ import Image from 'next/image';
 export default function Feature() {
 
     return (
-        <section className="border-div background2 w-full min-h-screen flex flex-col-reverse lg:flex-row items-center justify-evenly px-4 md:px-20 py-30 gap-10">
+        <section className="border-div background w-full min-h-screen flex flex-col-reverse lg:flex-row items-center justify-evenly px-4 md:px-20 py-30 gap-10">
 
             {/* Image Column */}
             <div className="w-full max-w-[180px] sm:max-w-[250px] md:max-w-[360px] lg:max-w-[460px] xl:max-w-[520px] z-10">
@@ -12,7 +12,7 @@ export default function Feature() {
                     alt="Black Hole Cockroaches Illustration"
                     width={800}
                     height={900}
-                    className="w-full h-auto"
+                    className="w-full h-auto border border-white/40"
                     priority
                 />
             </div>
@@ -47,9 +47,9 @@ export default function Feature() {
                         Browse tales of the odd and eerie, or publish a tale of your own volition. Whispers Archive is the dungeon where forgotten authors exercise ambition.
                     </h2></div>
                 <div className="flex flex-col sm:flex-row gap-4 mt-8">
-                    <button className="primaryBtn text-[clamp(1rem,1.5vw,1.25rem)] px-6 py-3 min-w-[180px]">
+                    <a href="/story/black-hole-cockroaches"className="primaryBtn text-[clamp(1rem,1.5vw,1.25rem)] px-6 py-3 min-w-[180px]">
                         Read Now
-                    </button>
+                    </a>
                     <a href="/ " className="primaryBtn text-[clamp(1rem,1.5vw,1.25rem)] px-6 py-3 min-w-[180px]">
                         Youtube
                     </a>

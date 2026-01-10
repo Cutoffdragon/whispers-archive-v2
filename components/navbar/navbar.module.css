@@ -1,0 +1,17 @@
+#navbar {
+    border-bottom: 1px solid white;
+    height: 70px;
+    background: linear-gradient(#000000, #0f0d0d)
+}
+
+.navFont {
+    font-size: clamp(1.25rem, 4vw, 2rem);
+    transition: all 0.2s;
+    margin-block: auto;
+}
+
+.navFont:hover {
+    color: #6D0000;
+    transform: scale(1.1);
+    cursor: pointer;
+}
