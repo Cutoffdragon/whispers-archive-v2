@@ -20,5 +20,14 @@ export const stories: Story[] = [
         description: "A surreal tale of cosmic horror and existential dread.",
         content: "../whispers-archive-v2/content/black-hole-cockroaches.md",
         pictureUrl: "/assets/black_hole_cockroaches.png"
+    },
+
+    {
+        name: "the-ulter-hell",
+        title: "The Ulter Hell",
+        date: "2025-01-15",
+        description: "A journey through a nightmarish underworld filled with unimaginable terrors.",
+        content: "../whispers-archive-v2/content/the-ulter-hell.md",
+        pictureUrl: "/assets/the_ulter_hell.png"
     }
 ]
