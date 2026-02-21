@@ -37,7 +37,7 @@ export default function Feature() {
     }
 
     return (
-        <section className="border-div background w-full min-h-screen flex flex-col items-center justify-evenly px-4 md:px-20 py-30 gap-10 overflow-hidden">
+        <section className="border-div background w-full min-h-screen flex flex-col items-center justify-evenly px-4 md:py-30 gap-10 overflow-hidden">
             
             <div
                 className={`
@@ -49,7 +49,7 @@ export default function Feature() {
                 <StoryFeature story={stories[featureState]} />
             </div>
 
-            <div className="flex gap-20 mt-8 flex-row">
+            <div className="flex gap-20 mb-20 md:mt-8 flex-row">
                 <FontAwesomeIcon
                     onClick={handlePrev}
                     className="text-4xl text-red-500 hover:text-red-300 cursor-pointer z-500"

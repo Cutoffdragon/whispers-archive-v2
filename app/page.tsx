@@ -1,5 +1,4 @@
 import Feature from "@/components/hero/feature";
-import Hero from "@/components/hero/hero";
 
 export default function Home() {
   return (
