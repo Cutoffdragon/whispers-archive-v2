@@ -61,7 +61,6 @@ export default function Feature() {
                     icon={faAngleRight}
                 />
             </div>
-
         </section>
     )
 }
