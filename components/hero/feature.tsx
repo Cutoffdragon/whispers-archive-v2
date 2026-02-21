@@ -1,59 +1,65 @@
-import Image from 'next/image';
+'use client';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { stories } from '@/lib/stories';
+import StoryFeature from '../story/storyFeature';
+import { useState } from 'react';
+import { faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons'
 
 export default function Feature() {
+    const [featureState, setFeatureState] = useState(0)
+    const [direction, setDirection] = useState<'left' | 'right' | null>(null)
+    const [animating, setAnimating] = useState(false)
+
+    const handleNext = () => {
+        if (animating) return
+        setDirection('right')
+        setAnimating(true)
+
+        setTimeout(() => {
+            setFeatureState((prev) =>
+                prev === stories.length - 1 ? 0 : prev + 1
+            )
+            setAnimating(false)
+        }, 200)
+    }
+
+    const handlePrev = () => {
+        if (animating) return
+        setDirection('left')
+        setAnimating(true)
+
+        setTimeout(() => {
+            setFeatureState((prev) =>
+                prev === 0 ? stories.length - 1 : prev - 1
+            )
+            setAnimating(false)
+        }, 200)
+    }
 
     return (
-        <section className="border-div background w-full min-h-screen flex flex-col-reverse lg:flex-row items-center justify-evenly px-4 md:px-20 py-30 gap-10">
-
-            {/* Image Column */}
-            <div className="w-full max-w-[180px] sm:max-w-[250px] md:max-w-[360px] lg:max-w-[460px] xl:max-w-[520px] z-10">
-                <Image
-                    src="/assets/black_hole_cockroaches.png"
-                    alt="Black Hole Cockroaches Illustration"
-                    width={800}
-                    height={900}
-                    className="w-full h-auto border border-white/40"
-                    priority
-                />
+        <section className="border-div background w-full min-h-screen flex flex-col items-center justify-evenly px-4 md:px-20 py-30 gap-10 overflow-hidden">
+            
+            <div
+                className={`
+                    transition-all duration-200 ease-in-out
+                    ${animating ? 'opacity-0 translate-x-6' : 'opacity-100 translate-x-0'}
+                    ${direction === 'left' && animating ? '-translate-x-6' : ''}
+                `}
+            >
+                <StoryFeature story={stories[featureState]} />
             </div>
 
-
-            <div className="gap-4 lg:gap-8 flex flex-col items-center lg:items-start text-center lg:text-left w-full lg:w-1/2 z-10">
-                <div className="textDiv"><h1
-                    className="text-[clamp(2.5rem,5vw,6rem)] leading-tight font-bold mainFont"
-                    style={{
-                        color: '#f5f3f0',
-                        textShadow: `
-      0 6px 12px rgba(0, 0, 0, 0.9),
-      0 12px 28px rgba(0, 0, 0, 0.85),
-      0 20px 60px rgba(0, 0, 0, 0.8)
-    `,
-                        letterSpacing: '-0.02em',
-                    }}
-                >
-                    Black Hole Cockroaches
-                </h1></div>
-                <div className="textDiv">
-                    <h2 className="text-[clamp(1rem,2.8vw,2.75rem)] leading-tight font-bold mainFont"
-                        style={{
-                            color: '#f5f3f0',
-                            textShadow: `
-      0 6px 12px rgba(0, 0, 0, 0.9),
-      0 12px 28px rgba(0, 0, 0, 0.85),
-      0 20px 60px rgba(0, 0, 0, 0.8)
-    `,
-                            letterSpacing: '-0.02em',
-                        }}>
-                        Browse tales of the odd and eerie, or publish a tale of your own volition. Whispers Archive is the dungeon where forgotten authors exercise ambition.
-                    </h2></div>
-                <div className="flex flex-col sm:flex-row gap-4 mt-8">
-                    <a href="/story/black-hole-cockroaches"className="primaryBtn text-[clamp(1rem,1.5vw,1.25rem)] px-6 py-3 min-w-[180px]">
-                        Read Now
-                    </a>
-                    <a href="/ " className="primaryBtn text-[clamp(1rem,1.5vw,1.25rem)] px-6 py-3 min-w-[180px]">
-                        Youtube
-                    </a>
-                </div>
+            <div className="flex gap-20 mt-8 flex-row">
+                <FontAwesomeIcon
+                    onClick={handlePrev}
+                    className="text-4xl text-red-500 hover:text-red-300 cursor-pointer z-500"
+                    icon={faAngleLeft}
+                />
+                <FontAwesomeIcon
+                    onClick={handleNext}
+                    className="text-4xl text-red-500 hover:text-red-300 cursor-pointer z-500"
+                    icon={faAngleRight}
+                />
             </div>
 
         </section>

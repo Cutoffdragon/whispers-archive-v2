@@ -1,11 +1,7 @@
 import { Story } from "@/lib/stories";
-import { parseISO, format } from "date-fns";
 import Image from 'next/image';
 
 export default function StoryInfo({ story }: { story: Story }) {
-
-    const date = parseISO(story.date);
-    const formatted = format(date, "d MMMM, yyyy");
 
     return (
         <section className="m-auto flex flex-col gap-8 m-20 w-[90vw] sm:w-[600px] md:w-[700px] lg:w-[800px] px-4 md:px-20 py-10 shadow-md h=[80vh]">
@@ -25,9 +21,6 @@ export default function StoryInfo({ story }: { story: Story }) {
                     priority
                 />
             </div>
-            <p className="text-[clamp(0.85rem,1.2vw,1.1rem)] italic text-gray-400 mt-1 m-auto">
-                {formatted}
-            </p>
             <p className="text-[clamp(0.85rem,1.2vw,1.1rem)] italic text-white-400 mt-1 leading-relaxed text-center">
                 {story.description}
             </p>

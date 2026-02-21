@@ -2,10 +2,10 @@
 export type Story = {
     name: string;
     title: string;
-    date: string;
     description: string;
     content: string;
     pictureUrl: string;
+    youtube: string;
 }
 
 export const getStory = (name: string): Story | undefined => {
@@ -14,20 +14,36 @@ export const getStory = (name: string): Story | undefined => {
 
 export const stories: Story[] = [
     {
-        name: "black-hole-cockroaches",
-        title: "Black Hole Cockroaches",
-        date: "2025-01-05",
-        description: "A surreal tale of cosmic horror and existential dread.",
-        content: "../whispers-archive-v2/content/black-hole-cockroaches.md",
-        pictureUrl: "/assets/black_hole_cockroaches.png"
+        name: "the-slagport-downs-massacre",
+        title: "The Slagport Downs Massacre",
+        description: "A harrowing murder leaves the port city of Slagport in terror. When a detective investigates the case, he unveils a primal force that seeks to unleash centuries of vengeance upon humanity...",
+        content: "../whispers-archive-v2/content/the-slagport-downs-massacre.md",
+        pictureUrl: "/assets/slagport.png",
+        youtube: ""
     },
-
     {
         name: "the-ulter-hell",
         title: "The Ulter Hell",
-        date: "2025-01-15",
-        description: "A journey through a nightmarish underworld filled with unimaginable terrors.",
+        description: "The renowned artist Sandor has lived a life of luxury and excess. When a vengeful ex-lover plans to ruin his life, she finds that Sandor has taken up residence in a haunted mansion, called 'The Ulter Hell'. Within, she discovers that Sandor's latest work threatens to consume not only himself, but everything around it... ",
         content: "../whispers-archive-v2/content/the-ulter-hell.md",
-        pictureUrl: "/assets/the_ulter_hell.png"
+        pictureUrl: "/assets/the_ulter_hell.png",
+        youtube: ""
+    },
+    {
+        name: "one-night-under-the-western-bridge",
+        title: "One Night Under the Western Bridge",
+        description: "A single weekend in the city of Dysgenita can poison the mind. Strange things happen at night, and people go missing when they wander down the wrong street...",
+        content: "../whispers-archive-v2/content/one-night-under-the-western-bridge.md",
+        pictureUrl: "/assets/western_bridge.png",
+        youtube: ""
+    },
+    {
+        name: "the-aqman-files",
+        title: "The AqMan Files",
+        description: "Ralov Charksy awakens in a prison, with no recollection of how he got there. As the days pass, strange things happen to the world outside. Ralov is left subject to invasive phone calls, as he witnesses the strange metamorphosis of the planet he once knew.",
+        content: "../whispers-archive-v2/content/the-aqman-files.md",
+        pictureUrl: "/assets/the_aqman_files.png",
+        youtube: ""
     }
+
 ]
