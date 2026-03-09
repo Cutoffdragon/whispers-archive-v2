@@ -19,7 +19,7 @@ export const stories: Story[] = [
         description: "A harrowing murder leaves the port city of Slagport in terror. When a detective investigates the case, he unveils a primal force that seeks to unleash centuries of vengeance upon humanity...",
         content: "content/the-slagport-downs-massacre.md",
         pictureUrl: "/assets/slagport.png",
-        youtube: ""
+        youtube: "https://www.youtube.com/watch?v=g8IrVr1UTMc&t=564s"
     },
     {
         name: "the-ulter-hell",
@@ -35,7 +35,7 @@ export const stories: Story[] = [
         description: "A single weekend in the city of Dysgenita can poison the mind. Strange things happen at night, and people go missing when they wander down the wrong street...",
         content: "content/one-night-under-the-western-bridge.md",
         pictureUrl: "/assets/western_bridge.png",
-        youtube: ""
+        youtube: "https://www.youtube.com/watch?v=kUukmdnvfY0&t=4s"
     },
     {
         name: "the-aqman-files",
@@ -43,6 +43,14 @@ export const stories: Story[] = [
         description: "Ralov Charksy awakens in a prison, with no recollection of how he got there. As the days pass, strange things happen to the world outside. Ralov is left subject to invasive phone calls, as he witnesses the strange metamorphosis of the planet he once knew.",
         content: "content/the-aqman-files.md",
         pictureUrl: "/assets/the_aqman_files.png",
+        youtube: "https://www.youtube.com/watch?v=UXqoYXUFtyE"
+    },
+    {
+        name:"visions-of-viktor",
+        title: "Visions of Viktor",
+        description: "The massive wall of Arcterman's End is Dysgenita's greatest safeguard. Atop the wall, a mysterious man tells tales of a religious prophecy, the thought of which threatens to deconstruct reality itself.",
+        content: "content/visions-of-viktor.md",
+        pictureUrl: "/assets/visions_of_viktor.png",
         youtube: ""
     }
 

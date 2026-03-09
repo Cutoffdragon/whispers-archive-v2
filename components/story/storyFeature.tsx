@@ -50,7 +50,7 @@ export default function StoryFeature({ story }: { story: Story }) {
                             <a href={`/story/${story.name}`} className="primaryBtn text-[clamp(1rem,1.5vw,1.25rem)] px-6 py-3 min-w-[180px]">
                                 Read Now
                             </a>
-                            {story.youtube != "" && <a href="/ " className="primaryBtn text-[clamp(1rem,1.5vw,1.25rem)] px-6 py-3 min-w-[180px]">
+                            {story.youtube != "" && <a href={story.youtube} target="blank" className="primaryBtn text-[clamp(1rem,1.5vw,1.25rem)] px-6 py-3 min-w-[180px]">
                                 Youtube
                             </a> }
                         </div>

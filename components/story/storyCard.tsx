@@ -54,7 +54,8 @@ export default function StoryCard( { story }: { story: Story}) {
                 Read Now
             </a>
             {story.youtube != "" && <a
-                href="/"
+                href={story.youtube}
+                target="blank"
                 className="primaryBtn text-base px-6 py-3 min-w-[170px]"
             >
                 YouTube
