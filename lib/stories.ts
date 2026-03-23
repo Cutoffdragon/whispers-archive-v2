@@ -27,7 +27,7 @@ export const stories: Story[] = [
         description: "The renowned artist Sandor has lived a life of luxury and excess. When a vengeful ex-lover plans to ruin his life, she finds that Sandor has taken up residence in a haunted mansion, called 'The Ulter Hell'. Within, she discovers that Sandor's latest work threatens to consume not only himself, but everything around it... ",
         content: "content/the-ulter-hell.md",
         pictureUrl: "/assets/the_ulter_hell.png",
-        youtube: ""
+        youtube: "https://www.youtube.com/watch?v=6wsQfTXlyJ0&t=2764s"
     },
     {
         name: "one-night-under-the-western-bridge",
@@ -51,6 +51,14 @@ export const stories: Story[] = [
         description: "The massive wall of Arcterman's End is Dysgenita's greatest safeguard. Atop the wall, a mysterious man tells tales of a religious prophecy, the thought of which threatens to deconstruct reality itself.",
         content: "content/visions-of-viktor.md",
         pictureUrl: "/assets/visions_of_viktor.png",
+        youtube: ""
+    },
+    {
+        name:"the-human-face",
+        title: "The Human Face",
+        description: "During a mundane detour to avoid traffic, a man comes across an old freak show from his childhood. What starts as a nostalgic walk through the abandoned fair grounds quickly turns into a nightmarish recollection of the attrocities committed by a freak, known as The Human Face.",
+        content: "content/the-human-face.md",
+        pictureUrl: "/assets/human_face.png",
         youtube: ""
     }
 
