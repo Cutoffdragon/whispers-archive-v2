@@ -10,6 +10,8 @@ export default function Feature() {
     const [direction, setDirection] = useState<'left' | 'right' | null>(null)
     const [animating, setAnimating] = useState(false)
 
+    const storyList = stories.slice(stories.length - 3, stories.length);
+
     const handleNext = () => {
         if (animating) return
         setDirection('right')
@@ -17,7 +19,7 @@ export default function Feature() {
 
         setTimeout(() => {
             setFeatureState((prev) =>
-                prev === stories.length - 1 ? 0 : prev + 1
+                prev === storyList.length - 1 ? 0 : prev + 1
             )
             setAnimating(false)
         }, 200)
@@ -30,7 +32,7 @@ export default function Feature() {
 
         setTimeout(() => {
             setFeatureState((prev) =>
-                prev === 0 ? stories.length - 1 : prev - 1
+                prev === 0 ? storyList.length - 1 : prev - 1
             )
             setAnimating(false)
         }, 200)
@@ -38,15 +40,17 @@ export default function Feature() {
 
     return (
         <section className="border-div background w-full min-h-screen flex flex-col items-center justify-evenly px-4 md:py-30 gap-10 overflow-hidden">
-            
+
             <div
                 className={`
-                    transition-all duration-200 ease-in-out
-                    ${animating ? 'opacity-0 translate-x-6' : 'opacity-100 translate-x-0'}
-                    ${direction === 'left' && animating ? '-translate-x-6' : ''}
-                `}
+    transition-all duration-200 ease-in-out
+    ${animating
+                        ? `opacity-0 ${direction === 'right' ? 'translate-x-6' : '-translate-x-6'}`
+                        : 'opacity-100 translate-x-0'
+                    }
+  `}
             >
-                <StoryFeature story={stories[featureState]} />
+                <StoryFeature story={storyList[featureState]} />
             </div>
 
             <div className="flex gap-20 mb-20 md:mt-8 flex-row">
