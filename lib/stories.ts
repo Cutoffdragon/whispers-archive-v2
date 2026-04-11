@@ -68,6 +68,14 @@ export const stories: Story[] = [
         content: "content/features/zed.md",
         pictureUrl: "/assets/zed.png",
         youtube: ""
+    },
+    {
+        name: "case-files-urdd-99a",
+        title: "Case Files URDD-99A",
+        description: "A strange, beggarly man with the power to manipulate the willpower of humans threatens to unravel society itself.",
+        content: "content/features/case-files-urdd-99a.md",
+        pictureUrl: "/assets/case_files.png",
+        youtube: ""
     }
 
 ]
