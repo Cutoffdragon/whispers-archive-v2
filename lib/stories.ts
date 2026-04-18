@@ -76,6 +76,14 @@ export const stories: Story[] = [
         content: "content/features/case-files-urdd-99a.md",
         pictureUrl: "/assets/case_files.png",
         youtube: ""
+    },
+    {
+        name: "the-hand-of-the-shadowed-man",
+        title: "The Hand of the Shadowed Man",
+        description: "A troubled boy senses that an unkowable force has been stalking him. As he can feel the hand of this stalker gripping his head as he sleeps, he begins to wonder what future the strange shadow has in store for him.",
+        content: "content/features/the-hand-of-the-shadowed-man.md",
+        pictureUrl: "/assets/shadowed_man.png",
+        youtube: ""
     }
 
 ]
