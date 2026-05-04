@@ -67,7 +67,7 @@ export const stories: Story[] = [
         description: "Following a confession that his wife originally married him to inherit his estate, a pyshicatrist enacts twisted revenge.",
         content: "content/features/zed.md",
         pictureUrl: "/assets/zed.png",
-        youtube: ""
+        youtube: "https://www.youtube.com/watch?v=CV3eypoFfVc"
     },
     {
         name: "case-files-urdd-99a",
@@ -75,7 +75,7 @@ export const stories: Story[] = [
         description: "A strange, beggarly man with the power to manipulate the willpower of humans threatens to unravel society itself.",
         content: "content/features/case-files-urdd-99a.md",
         pictureUrl: "/assets/case_files.png",
-        youtube: ""
+        youtube: "https://www.youtube.com/watch?v=o-IMqm8JuMg"
     },
     {
         name: "the-hand-of-the-shadowed-man",
