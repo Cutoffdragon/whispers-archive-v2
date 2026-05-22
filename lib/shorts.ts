@@ -26,7 +26,7 @@ export const shorts: Short[] = [
         content: "content/shorts/the-most-wicked-man-in-time.md"
     },
     {
-        name: "Photographic Memory",
+        name: "photographic-memory",
         title: "Photographic Memory",
         content: "content/shorts/photographic-memory.md"
     },
@@ -39,5 +39,20 @@ export const shorts: Short[] = [
         name: "the-black-jacket",
         title: "The Black Jacket",
         content: "content/shorts/the-black-jacket.md"
-    }
+    },
+    {
+        name: "trauma",
+        title: "Trauma",
+        content: "content/shorts/trauma.md"
+    },
+    {
+        name: "killed-in-hadesville",
+        title: "Killed in HadesVille",
+        content: "content/shorts/killed-in-hadesville.md"
+    },
+    {
+        name: "allans-tape",
+        title: "Allan's Tape",
+        content: "content/shorts/allans-tape.md"
+    },
 ]

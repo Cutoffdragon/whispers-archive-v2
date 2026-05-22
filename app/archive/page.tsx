@@ -1,6 +1,6 @@
 'use client'
 import StoryList from "@/components/lists/storyList"
-import ShortList from "@/components/lists/shortList";
+import CollectionList from "@/components/lists/collectionList";
 import { useState } from "react"
 
 export default function Archive() {
@@ -16,7 +16,7 @@ export default function Archive() {
                 <h2 className={`${!filter? 'underline' : 'text-decoration: none'} text-3xl font-bold tracking-wide hover-underline cursor-pointer`} onClick={() => setFilter(false)}>Shorts</h2>
             </div>
             {filter && <StoryList />}
-            {!filter && <ShortList />}
+            {!filter && <CollectionList />}
         </section>
     )
 }
