@@ -101,6 +101,15 @@ export const stories: Story[] = [
         description: "In this gothic tale of tragedy and decay, a farm's thin blood ties are threatened by a death in the family. When a young girl finds a written plot to murder her family, she realizes that her deceased Uncle may have been protecting them from a malevolent force in the skies above.",
         content: "content/features/the-crows-of-wither-creek.md",
         pictureUrl: "/assets/crows_of_wither_creek.png",
+        youtube: "https://www.youtube.com/watch?v=PF2F8U85GQg&t=115s",
+        collection: 2,
+    },
+    {
+        name: "the-men-of-worms",
+        title: "The Men of Worms",
+        description: "Humanity is threatened by an unknown anomaly from outerspace. In wake of death, loss, and chaos, a young woman flees to a secluded motel in remote wilderness. What lay within the walls poses questions she never thought she would ask, and answers that are even more terrifying...",
+        content: "content/features/the-men-of-worms.md",
+        pictureUrl: "/assets/men_of_worms.png",
         youtube: "",
         collection: 2,
     }
