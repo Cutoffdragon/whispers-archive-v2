@@ -60,15 +60,6 @@ export const stories: Story[] = [
         collection: 1,
     },
     {
-        name:"the-human-face",
-        title: "The Human Face",
-        description: "During a mundane detour to avoid traffic, a man comes across an old freak show from his childhood. What starts as a nostalgic walk through the abandoned fair grounds quickly turns into a nightmarish recollection of the atrocities committed by a freak, known as The Human Face.",
-        content: "content/features/the-human-face.md",
-        pictureUrl: "/assets/human_face.png",
-        youtube: "https://www.youtube.com/watch?v=AbOGAxlwibQ",
-        collection: 1,
-    },
-    {
         name:"zed",
         title: "Zed",
         description: "Following a confession that his wife originally married him to inherit his estate, a pyshicatrist enacts twisted revenge.",
@@ -104,14 +95,5 @@ export const stories: Story[] = [
         youtube: "https://www.youtube.com/watch?v=PF2F8U85GQg&t=115s",
         collection: 2,
     },
-    {
-        name: "the-men-of-worms",
-        title: "The Men of Worms",
-        description: "Humanity is threatened by an unknown anomaly from outerspace. In wake of death, loss, and chaos, a young woman flees to a secluded motel in remote wilderness. What lay within the walls poses questions she never thought she would ask, and answers that are even more terrifying...",
-        content: "content/features/the-men-of-worms.md",
-        pictureUrl: "/assets/men_of_worms.png",
-        youtube: "",
-        collection: 2,
-    }
 
 ]
